@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Registre</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+	<main>
+
+
+		<div class="from-login">
+			<!-- Imatge Login -->
+			<div class="from-img">
+				<div class="overlay">
+					<h1>House Tour</h1>
+					<!-- <p>Inici de Sessió</p> -->
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-youtube-play"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Imputs Login -->
+			<div class="from-input">
+				<div class="inputs">
+					<!-- http://www.damcostafreda04.cat/M8_ProjecteCases/php/uploadImg.php -->
+					<form action="" method="post" id="register-form" enctype="multipart/form-data">
+						<h5>Registre de Usuaris</h5>
+
+						<input type="text" name="nom" placeholder="Insereix el seu nom" class="input" />
+						<input type="text" name="cognom" placeholder="Insereix el primer cognom" class="input" />
+						<input type="email" name="correu" placeholder="Insereix correu" class="input"  />
+						<input type="password" name="contrasenya" placeholder="Insereix contrasenya" class="input" />
+			  
+						<h5> Dades Casa </h5>
+						<input type="text" name="localitat" placeholder="Localitat Casa" class="input" />
+						<input type="number" name="num_persones" placeholder="Capacitat de persones" class="input"/>
+						<input type="file" id="inputFile" name="inputFile" class="input"/>
+						<button type="submit" onclick="registrarUsuariCasa()">Registrar</button>
+					</form>
+				</div>
+				<div class="btn-login">
+					<p>Ja tens compte?  <a href="index.html">Entra ara!!</a></p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #A4BC92;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+
+#listCasa{
+    height: 85vh;
+    width: 100%;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    background-color: #f2f2f2;
+
+
+    
+}
+
+.cardCasa {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 30px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 30px 1px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 30px 1px rgba(0,0,0,0.75);
+}
+
+.infoCasa{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 2rem;
+    border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+#imgHouse{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#localitat{
+    font-size: 2rem;
+    color: gray;
+    font-weight: bold;
+}
+
+#capacitat{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#capacitat p{
+    color: rgb(177, 177, 177);
+    font-size: 2rem;
+}
+
+.fa-users{
+    padding-left: 2rem;
+    color: rgb(177, 177, 177);
+}
+
+#userHouse{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgba(0,0,0,0.2);
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+#imgUser{
+    width: 70%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h3{
+    width: 100%;
+    padding: 1rem 0rem 0rem 2rem;
+    text-align: left;
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#userHouse img{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 45px;
+}
+
+#userHouse p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.iconsLike{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.match{
+    text-align: left;
+    font-size: 2.5rem;
+    color: orange;
+}
+
+.no_match{
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+
+.fa-heart{
+    font-size: 2.5rem;
+    color: red;
+}
+
+.fa-heart-o{
+    font-size: 2.5rem;
+}
+
+.footerCasa {
+    background-color: white;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #A4BC92;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon-list-ul {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.icon-swipe {
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+/* Media Query Adaptació pantalla */
+
+@media (max-width: 480px) {
+
+
+    header {
+        font-size: 1.2rem;
+        text-align: center;
+
+    }
+
+    .fa-refresh{
+        margin-right: 1rem;
+    }
+
+    #listCasa{
+        flex-direction: row;
+
+    }
+
+    .cardCasa {
+        width: 100%;
+        margin: 1rem;
+        -webkit-box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.35);
+        -moz-box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.35);
+        box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.35);
+    }
+
+    .infoCasa{
+        font-size: 2rem;
+    }
+    #userHouse{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 980px) {
+
+    #listCasa{
+        flex-direction: row;
+
+    }
+
+    .cardCasa {
+        width: 100%;
+    }
+}

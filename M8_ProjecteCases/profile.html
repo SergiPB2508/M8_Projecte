@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile User and House</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/profile.css"/>
+</head>
+<body>
+    <header>
+        <h1> Perfil Usuari i Casa</h1>
+        <a href="profile.html" class="button"><i class="fa fa-refresh" style="font-size:4rem;color: '#A4BC9'"></i></a>
+    </header>
+
+    <main id="main">
+        <div class="dadesUpdate">
+            <h2> Dades Usuari </h2>
+            <form action="" method="post" id="dadesUsuari" onsubmit="actualitzarUser()">
+                <input type="text" name="nom" placeholder="Correu de l'usuari" class="input" readonly/>
+                <input type="text" name="cognom" placeholder="Nom de l'usuari" class="input"/>
+                <input type="email" name="correu" placeholder="Cognom de l'usuari" class="input"/>
+                <input type="password" name="contrasenya" placeholder="Contrasenya de l'usuari" class="input"/>
+                <input type="submit" name="submit" value="Actualitzar_Dades" class="botons" id="registrarBoto" />
+            </form>
+        </div>
+
+        <div class="dadesUpdate">
+            <h2> Dades Casa </h2>
+            <form action="" method="post" id="dadesCasa" onsubmit="actualitzarCasa()">
+                <input type="text" name="localitat" placeholder="Localitat Casa" class="input" />
+                <input type="number" name="num_persones" placeholder="Capacitat de persones" class="input" />
+                <input type="file" id="file" name="imatge" class="input"/>
+                <input type="submit" name="submit" value="Actualitzar_Casa" class="botons">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="profile.html"><i style="font-size:2.5rem " class="fa">&#xf007;</i></a>
+        <a href="llistat.html"><span class="icon-list-ul"></span></a>
+        <a href="tinderCasa.html"><span class="icon-swipe"></span></a>
+    </footer>
+    <script src="js/profile.js"></script>
+</body>
+</html>

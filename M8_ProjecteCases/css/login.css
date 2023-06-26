@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(135deg, #fee0e0 10%, #9cc080 100%);
+
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+/*Imputs Part Esquerra */
+.from-login {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70vw;
+  height: 70vh;
+
+
+}
+
+.from-img {
+  color: #FFFFFF;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/loginHeader.jpg");
+
+  height: 100%;
+}
+
+.from-img .overlay {
+  padding: 3rem;
+  background: #a8d1a093;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+
+.from-img .overlay h1 {
+  font-size: 10rem;
+
+}
+
+.social {
+  display: flex;
+  align-items: center;
+
+}
+
+.social p {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.social a {
+  background: #9cc080;
+  color: #FFFFFF;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  box-shadow: 0 3px 6px 1px #042d4657;
+}
+
+
+/*Imputs Part Dreta */
+.from-input {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  background: white;
+
+  padding: 2rem;
+
+  height: 100%;
+
+}
+
+.from-input h5 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.from-input p {
+  font-size: 14px;
+  color: #b6b9b0;
+}
+
+.from-input .inputs {
+  padding: 1rem 0;
+}
+
+.from-input input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #B0B3B9;
+}
+
+.from-input .btn-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+
+.from-input .btn-login button {
+
+  color: white;
+  font-size: 16px;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5rem;
+
+  box-shadow: 0px 4px 20px 0px #49c628a6;
+  background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+}
+
+
+
+@media (max-width: 640px) {
+  .from-img{
+    display: none;
+  }
+  .from-input {
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 3%;
+
+    width: 70vw;
+    height: 70vh;
+  }
+}
+
